@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Twelve Cats</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="name">
+		<h1>Kitty Cats</h1>
+		<p><em>Click and hold</em> to see <strong>full</strong> pictures!</p>
+	</div>
+	<nav class="control">
+		<i class="fa-solid fa-circle-plus add-btn" title="Добавить кота"></i>
+	</nav>
+	<div class="container">
+	</div>
+	<div class="modal-container">
+		<div class="modal">
+			<i class="fa-regular fa-circle-xmark modal-close"></i>
+			<h2>Добавить питомца</h2>
+			<form id="add">
+				<input type="number" name="id" placeholder="id кота" required>
+				<input type="text" name="name" placeholder="Имя кота" required>
+				<input type="url" name="image" placeholder="Картинка">
+				<input type="number" name="age" placeholder="Возраст">
+				<input type="number" name="rate" placeholder="Рейтинг" min="" max="5">
+				<label>
+					<input type="checkbox" name="favorite">
+					Любимчик
+				</label>
+				<textarea name="description" placeholder="Информация о питомце"></textarea>
+				<button type="submit">Добавить</button>
+			</form>
+		</div>
+	</div>
+	<script src="global.js"></script>
+	<script src="script.js"></script>
+	<script src="addForm.js"></script>
+</body>
+</html>
